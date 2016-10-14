@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cover Letter</title>
+
+	<!--Put this in a div and move the block(div) across the screen instead-->
+	<h1 id="code_monkey"; style="color:cyan; margin-left:5%; text-indent: 1%; font-size:50px;">Code&nbsp;Monkey</h1>
+	<hr>
+	<script>
+		var the_timer, x_position = 1, the_header;
+		function set_timer() {
+			// body...
+			the_header = document.getElementById('code_monkey');
+			x_position += 1;
+			if (x_position == 80) {x_position = -15};
+			the_header.style.textIndent = x_position + "%";
+			the_timer = setTimeout(set_timer, 150);
+		}
+	</script>
+</head>
+<body onload="set_timer()" style="background:black;">
+	<section style="background:black;">
+		<div style="color:white; margin-left: 1%; float:left; width:40%">
+			<div style="width:40%; position: absolute; height:30%; line-height:1em;
+			 overflow:auto; padding:5%; padding-top:2%; background-color:#FCFADD; color:#714D03; border:4px double #DEBB07; margin-top:3%">
+				<h1>My Spiel</h1>
+				<p style="text-indent:50px; font-family:Ariel; text-align:justify;">
+					My name is Bijan Fazeli and I am a current student at Orange Coast College interested in applying for an Android internship position for summer of '17. I became fascinated about Android development for a while now, and I've been eager to apply for an internship in Android development to gain valuable industry experience. I am a self-motivated, and self-drivin individual that works well both individually and alongside a team of developers in an agile work environment to solve quick problems by coming up with solutions and making documentations in order to communicate with clients as to what was wrong and what was fixed. I'll be publishing my first application to the google play store in the next coming months. Currently, I am studying computer science, and plan on taking either a second bachelors or a master's in software engineering in the foreseeable future. 
+				</p>
+				<p style="font-family:Ariel;">
+					If you have any questions feel free to contact me at: <br><br>
+					Mobile: <a href="tel:562-746-8315">562-746-8315</a><br>
+					Email: <a href="mailto:bfazeli@student.cccd.edu">bfazeli@student.cccd.edu</a><br>
+					LinkedIn: <a href="https://www.linkedin.com/in/bfazeli">https://www.linkedin.com/in/bfazeli</a><br>
+					Github: <a href="https://github.com/bfazeli">https://github.com/bfazeli</a>
+				</p> 
+				<p style="font-family:Ariel;">I hope to hear from you soon.</p>
+				<p style="font-family:Ariel;">
+					Regards, <br>
+					Bijan Fazeli
+				</p>
+			</div>
+		</div>
+		<div width="50%" style="margin-right: 5%">
+			<img style="padding-top: 3%; float:right;" src="./res/PortfolioPic.jpg" alt="" width="40%;">
+		</div>
+		<form action="assign2b.html" method="POST">
+				<button type="submit" style="width:50%; height:20%; position: absolute; left:2%; bottom:3%; font-size:45px; color:#FF4500; background-color:#00FFFF">Resume</button>
+		</form>
+	</section>
+</body>
+</html>
